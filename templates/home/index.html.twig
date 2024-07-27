@@ -7,17 +7,19 @@
 {% block body %}
 
     <div class="logout">
-        <p>Bienvenue {{ user.userIdentifier }} !</p>
-        <a href="{{ path('app_logout') }}">Me déconnecter</a>
+        <a href="{{ path('app_logout') }}" class="button">Me déconnecter</a>
     </div>
 
     {% if user.getFiles %}
     <div class="files">
-
+        <div class="top">
+            <h2>Mes fichiers</h2>
+            <a class="material-symbols-outlined" id="addFile" href="{{ path('app_addFile') }}">create_new_folder</a>
+        </div>
         {% for file in user.getFiles %}
-            <a href="/">{{ file.name }}</a>
+            <a href="{{ path('app_home') ~ file.slug }}" class="fileName">{{ file.name }}</a>
+            <p>Modifié le {{ file.modifiedAt.format('Y-m-d') }}</p>
         {% endfor %}
-
     </div>
     {% endif %}
 

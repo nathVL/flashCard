@@ -40,18 +40,9 @@
 
 .login button {
     width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
     border: none;
-    color: white;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
     margin-bottom: 10px;
-}
-
-.login button:hover {
-    background-color: var(--hover-primary-color);
 }
 
 .login a {

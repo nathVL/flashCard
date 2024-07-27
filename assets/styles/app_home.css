@@ -1,0 +1,42 @@
+.logout {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logout a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.files {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.fileName {
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 5px;
+}
+
+#addFile {
+    cursor: pointer;
+    color: var(--primary-color);
+    border: solid var(--primary-color) 2px;
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
