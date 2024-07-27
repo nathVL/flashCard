@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+
+
+{% block body %}
+
+    <div class="logout">
+        <p>Bienvenue {{ user.userIdentifier }} !</p>
+        <a href="{{ path('app_logout') }}">Me déconnecter</a>
+    </div>
+
+    {% if user.getFiles %}
+    <div class="files">
+
+        {% for file in user.getFiles %}
+            <a href="/">{{ file.name }}</a>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,90 @@
+/* assets/css/register.css */
+
+/* Ajouts pour le formulaire d'inscription */
+
+.register {
+    width: 100%;
+    max-width: 500px; /* Limite la largeur maximale */
+    margin: 50px auto; /* Centre horizontalement */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+}
+
+.register > form > div {
+    text-align: left;
+}
+
+.register h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.register .form-errors {
+    margin-bottom: 20px;
+    color: var(--wrong); /* Utilisez la couleur définie pour les erreurs */
+}
+
+.register .form-row {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.register label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.register input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box; /* Assure que padding ne dépasse pas la largeur */
+}
+
+.register button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.register button:hover {
+    background-color: var(--hover-primary-color);
+}
+
+.register a {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.agree > div > input {
+    width: auto;
+    margin-left: 20px;
+}
+
+.agree > div {
+    display: flex;
+    flex-direction: row;
+
+}

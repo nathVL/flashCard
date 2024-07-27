@@ -1,0 +1,67 @@
+/* Ajouts pour le formulaire de connexion */
+
+.login {
+    flex: 1;
+    width: 100%;
+    margin: 50px auto;
+    max-width: 500px;
+    max-height: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login h1 {
+    margin-bottom: 20px;
+}
+
+.login .email, .login .password {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.login button:hover {
+    background-color: var(--hover-primary-color);
+}
+
+.login a {
+    display: block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
